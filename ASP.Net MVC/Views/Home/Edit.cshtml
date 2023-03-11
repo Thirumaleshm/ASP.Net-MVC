@@ -1,0 +1,38 @@
+﻿@model ASP.Net_MVC.Models.Employee
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Edit</title>
+</head>
+<body>
+    <div>
+        <h1 style="text-align:center;">Edit Employee Form</h1>
+        <hr />
+        <form action="" method="post">
+            <label>Eno:</label>
+        
+            @Html.TextBoxFor(x => x.Eno)
+            <br />
+            <label>Ename:</label>
+           
+            @Html.TextBoxFor(x => x.Ename)
+            <br />
+            <label>Job:</label>
+         
+            @Html.TextBoxFor(x => x.Job)
+            <br />
+            <label>Salary:</label>
+       
+            @Html.TextBoxFor(x => x.Salary)
+            <br />
+            <label>Dname:</label>
+        
+            @Html.TextBoxFor(x => x.Dname)
+            <br />
+            <input type="submit" name="submit" value="Update" />
+        </form>
+    </div>
+</body>
+</html>
